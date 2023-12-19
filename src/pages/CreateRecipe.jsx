@@ -47,7 +47,7 @@ export default function CreateRecipe() {
       formData.append('image', recipe.image);
       formData.append('userOwner', recipe.userOwner);
 
-      await axios.post("https://recipe-app-api-cifg.onrender.com/createRecipe", formData,{
+      await axios.post("https://recipe-app-api-cifg.onrender.com/api/v1/recipe/createRecipe", formData,{
         headers:{
           'Content-Type':'multipart/form-data',
         },
