@@ -14,7 +14,7 @@ export default function Home() {
   useEffect(()=>{
     const fetchRecipe = async ()=>{
       try{
-        const response = await axios.get("http://localhost:9036/api/v1/recipe/getRecipe");
+        const response = await axios.get("https://recipe-app-api-cifg.onrender.com/api/v1/recipe/getRecipe");
         setRecipes(response.data.recipe);
         
       }catch(err){
