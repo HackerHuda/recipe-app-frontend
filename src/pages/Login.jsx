@@ -16,7 +16,7 @@ export default function Login() {
   const onSubmit= async(e)=>{
     e.preventDefault();
     try{
-      const res = await axios.post("https://recipe-app-api-cifg.onrender.com/api/v1/user/login",{
+      const res = await axios.post("https://recipe-app-api-fac8.onrender.com/api/v1/user/login",{
         email,
         password
       });

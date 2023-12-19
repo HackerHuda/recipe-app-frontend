@@ -10,7 +10,7 @@ export default function Register() {
     const onSubmit = async (e)=>{
       e.preventDefault();
       try{
-        await axios.post("https://recipe-app-api-cifg.onrender.com/api/v1/user/register",{
+        await axios.post("https://recipe-app-api-fac8.onrender.com/api/v1/user/register",{
           Name,email,password
         });
         alert("Registration completed!Now Login.")

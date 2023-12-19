@@ -11,7 +11,7 @@ export default function DeleteRecipe() {
   const userId =useGetUserId();
   const fetchRecipe = async () => {
     try {
-      const response = await axios.get(`https://recipe-app-api-cifg.onrender.com/api/v1/recipe/singlerecipe/${id}`);
+      const response = await axios.get(`https://recipe-app-api-fac8.onrender.com/api/v1/recipe/singlerecipe/${id}`);
       setRecipe(response.data.recipe);
 
     } catch (error) {
@@ -24,7 +24,7 @@ export default function DeleteRecipe() {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`https://recipe-app-api-cifg.onrender.com/api/v1/recipe/delete/${id}`,{
+      await axios.delete(`https://recipe-app-api-fac8.onrender.com/api/v1/recipe/delete/${id}`,{
         data: { userId },
       });
       navigate("/")

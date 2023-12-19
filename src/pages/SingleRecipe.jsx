@@ -7,7 +7,7 @@ export default function SingleRecipe()  {
     const { id } = useParams();
     const fetchRecipe = async () => {
       try {
-        const response = await axios.get(`https://recipe-app-api-cifg.onrender.com/api/v1/recipe/singlerecipe/${id}`);
+        const response = await axios.get(`https://recipe-app-api-fac8.onrender.com/api/v1/recipe/singlerecipe/${id}`);
         setRecipe(response.data.recipe);
         
       } catch (err) {
